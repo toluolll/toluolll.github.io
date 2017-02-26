@@ -16,11 +16,7 @@ html, body {
 body {
 	background-image: url("img/paper-bg.png");
 	background-repeat: repeat;
-}
-
-.stretch {
-	max-height: 100%;
-	max-width: 100%;
+	position: relative;
 }
 
 .title {
@@ -28,4 +24,62 @@ body {
 	margin: 20px;
 	top: 0px;
 	left: 0px;
+}
+
+/* Phones, portrait */ 
+@media only screen and (min-width : 320px) {
+	.title {
+		margin: 5px;
+		height: 60px;
+	}
+	.stretch {
+		margin-left: -30px;
+		margin-right: -110px;
+		
+	}
+	body, html {
+		overflow-x: hidden;
+	}
+}
+
+/* Phones, landscape */ 
+@media only screen and (min-width : 480px) {
+	.stretch {
+		margin: 0;
+	}
+}
+
+/* Tablets, protrait */
+@media only screen and (min-width : 768px) {
+	.title {
+		height: 120px;
+	}
+	.stretch {
+		margin-left: -30px;
+		margin-right: -110px;
+		
+	}
+}
+
+/* Tablets, landscape */
+@media only screen and (min-width : 992px) {
+	.title {
+		height: 14vh;
+	}
+	.stretch {
+		max-height: 100%;
+		max-width: 100%;
+	}
+}
+
+/* Desktops */
+@media only screen and (min-width : 1200px) {
+	.title {
+		padding: 15px;
+		height: 14vh;
+	}
+	.stretch {
+		max-height: 100%;
+		max-width: 100%;
+	}
 }
