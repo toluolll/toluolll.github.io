@@ -40,6 +40,8 @@ body {
 	body, html {
 		overflow-x: hidden;
 	}
+	.pyatno { opacity: 0.7; }
+	.pyatno:hover { opacity: 1; }
 }
 
 /* Phones, landscape */ 
@@ -70,6 +72,7 @@ body {
 		max-height: 100%;
 		max-width: 100%;
 	}
+	.pyatno { opacity: 0; }
 }
 
 /* Desktops */
