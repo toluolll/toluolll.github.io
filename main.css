@@ -14,8 +14,7 @@ html, body {
 }
 
 body {
-	background-image: url("img/paper-bg.png");
-	background-repeat: repeat;
+	background: url("img/paper-bg.png") repeat scroll;
 	position: relative;
 }
 
@@ -37,7 +36,7 @@ body {
 		margin-right: -110px;
 		
 	}
-	body, html {
+	body {
 		overflow-x: hidden;
 	}
 	.pyatno { opacity: 0.7; }
